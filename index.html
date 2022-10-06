@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/variables.css">
+    <link rel="stylesheet" href="src/css/form.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;800&display=swap" rel="stylesheet">
+</head>
+<body>
+     <section class="container">
+        <div class="texts">
+            <h2> FICOU COM DÚVIDA? <br> NOS MANDE UMA MENSAGEM! </h2>
+            <p> caso tenha ficado com qualquer dúvida,Basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+        </div>
+        <form id="form">
+            <div  class="form-control">
+                <input class="inputs" type="text" required id="userName" placeholder="Nome Completo...">
+                <i><img class="image-success" src="./src/images/form-validation/success-icon.svg" alt="success-icon"></i>
+                <i><img class="image-error" src="./src/images/form-validation/error-icon.svg" alt="error-icon"></i>
+                <small>Error Message</small> 
+            </div>
+
+            <div class="form-control">
+                <input class="inputs" type="text" required  id="email"  placeholder="Email...">
+                <i><img class="image-success" src="./src/images/form-validation/success-icon.svg" alt="success-icon"></i>
+                <i><img class="image-error" src="./src/images/form-validation/error-icon.svg" alt="error-icon"></i>
+                <small>Error Message</small> 
+            </div>
+            
+            <div class="form-control">
+                <input class="inputs" type="" required id="phone" placeholder="ex: (99)999999999">
+                <i><img class="image-success" src="./src/images/form-validation/success-icon.svg" alt="success-icon"></i>
+                <i><img class="image-error" src="./src/images/form-validation/error-icon.svg" alt="error-icon"></i>
+                <small>Error Message</small> 
+            </div>
+            
+            <div class="form-control">
+                <textarea class="message" name="" id="message" cols="25" rows="10" placeholder="digite sua dúvida aqui..."></textarea>
+            </div>
+            
+            <b class="requiredFields">*campos obrigatórios</b> <br><br>
+
+            <button type="submit" class="button" id="button">ENVIAR</button>
+        </form>
+    </section> 
+    <footer>
+        <a href="https://www.linkedin.com/in/gusta-rodrigues" target="_blank">© Developed by Gustavo Rodrigues</a>
+    </footer>
+    <script type="module" src="src/js/form.js"></script>
+</body>
+</html>

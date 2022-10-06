@@ -1,0 +1,138 @@
+#form {
+    border-radius: 1rem;
+    background-color: var(--color-white);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    padding: 20px;
+    width: 348px;
+    height: 450px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.form-control input {
+    border: 1px solid #000 ;
+    display: block;
+    border-radius: 0.4rem;
+    font-size: 15px ;
+    width: 100%;
+    padding: 10px;
+}
+
+.form-control.success input {
+    border-color: var(--color-sucess);
+}
+
+.form-control.error input:invalid {
+    animation: shake .2s;
+    border-color: var(--color-error);
+}
+
+@keyframes shake {
+    20% { transform: translateX(5px) }
+    45% { transform: translateX(-5px) }
+    70% { transform: translateX(5px) }
+}
+
+.form-control i {
+    position: absolute;
+    top: 0.6rem;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form-control.success i .image-success {
+    visibility: visible;
+}
+
+.form-control.error i .image-error {
+    visibility: visible;
+}
+
+.form-control #message {
+    resize: none;
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid #000 ; */
+    display: block;
+    border-radius: 0.4rem;
+    font-size: 15px ;
+    padding: 10px;
+}
+
+.form-control small {
+    position: absolute;
+    bottom: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: var(--color-error);
+} 
+
+#form button {
+    background-color: var(--color-btn);
+    color: var(--color-white);
+    border: 1px solid var(--color-btn);
+    border-radius: 5px;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+}
+
+
+/* .form-control i {
+    position: absolute;
+    top: 0.6rem;
+    right: 10px;
+    visibility: hidden;
+} */
+
+/* .form-control.success input {
+    border-color: var(--color-sucess);
+} */
+
+/* .form-control.success i .image-success {
+    visibility: visible;
+} */
+
+/* .form-control .message .success{
+    border-color: var(--color-sucess);
+} */
+
+/* .form-control.error input:invalid {
+    animation: shake .2s;
+    border-color: var(--color-error);
+} */
+
+/* .form-control.error i .image-error {
+    visibility: visible;
+} */
+
+/* .form-control.error input {
+    border-color: var(--color-error);
+} */
+
+
+    
+/* @keyframes shake {
+    
+    20% { transform: translateX(5px) }
+    
+    45% { transform: translateX(-5px) }
+    
+    70% { transform: translateX(5px) }
+} */
+
+/* .form-control .message .error{
+    border-color: var(--color-error);
+} */
+
+/* .form-control.error small {
+    visibility: visible;
+    color: var(--color-error);
+}  */

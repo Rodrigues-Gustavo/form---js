@@ -1,0 +1,50 @@
+body {
+    font-family: 'Noto Sans Mono', monospace;
+    width: 100%;
+    height:100vh;
+    background: linear-gradient(#ff66ff 29%, #0099ff 113%) no-repeat;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.texts {
+    width: 380px;
+    height: 150px;
+    top: 150px;
+    left: 50px;   
+    color: var(--color-white);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 30px;    
+}
+
+p {
+    font-weight: 400;
+    font-size: 15px;
+    width: 300px;
+    height: 54px;    
+}
+
+.requiredFields {
+    font-size: 10px;
+}
+
+footer {
+    text-align: center;
+    margin: 2rem;
+   margin-top: 100px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--color-white);
+}
