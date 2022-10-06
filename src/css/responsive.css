@@ -38,6 +38,9 @@
 }
 
 @media screen and (max-width: 415px) {
+    body {
+        overflow: scroll;
+    }
     #form {
         margin: 30px;
     }
@@ -46,6 +49,7 @@
 @media screen and (max-width: 390px) {
     body {
         width: 100%;
+        overflow: scroll;
     }
 
     .texts {
